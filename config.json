@@ -1,0 +1,23 @@
+{
+  "base_url": "https://quotes.toscrape.com/",
+  "endpoints": {
+    "search": "search.aspx",
+    "filter": "filter.aspx"
+  },
+  "selectors": {
+    "viewstate": "input#__VIEWSTATE",
+    "author_options": "select#author > option",
+    "tag_options": "select#tag > option",
+    "quotes": "div.quote",
+    "author": "span.author",
+    "content": "span.content",
+    "tag": "span.tag"
+  },
+  "http_settings": {
+    "timeout": 10,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+  },
+  "output_file": "quotes_output.json"
+}
