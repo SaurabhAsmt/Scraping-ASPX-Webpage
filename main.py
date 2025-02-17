@@ -42,7 +42,7 @@ def parse_quote(response):
             quote.css_first(config["selectors"]["content"]).text(strip=True),
             quote.css_first(config["selectors"]["tag"]).text(strip=True)
         )
-        extracted_quotes.append(new_quote.__dict__) #converts dict
+        extracted_quotes.append(new_quote.__dict__) #converts new_quote to dict
     return extracted_quotes
 
 
