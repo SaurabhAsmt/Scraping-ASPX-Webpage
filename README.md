@@ -19,33 +19,10 @@ pip install httpx selectolax
 ```
 
 ## Configuration
-The scraper reads settings from `config.json`. This file should include:
+The scraper reads settings from `config.json`.
 
-```json
-{
-    "base_url": "https://example.com",
-    "endpoints": {
-        "search": "/search",
-        "filter": "/filter"
-    },
-    "selectors": {
-        "viewstate": "#viewstate_id",
-        "author_options": ".author-class option",
-        "tag_options": ".tag-class option",
-        "quotes": ".quote-class",
-        "author": ".author-selector",
-        "content": ".content-selector",
-        "tag": ".tag-selector"
-    },
-    "http_settings": {
-        "timeout": 10,
-        "headers": {
-            "User-Agent": "Mozilla/5.0"
-        }
-    },
-    "output_file": "quotes_output.json"
-}
-```
+## Output
+The scraper stores output to file `quotes_output.json`
 
 ## Usage
 To run the scraper, execute:
